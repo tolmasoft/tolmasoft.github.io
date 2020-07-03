@@ -3091,7 +3091,7 @@ p.nominalBounds = new cjs.Rectangle(0,0,145,86);
 		if(this.totalFrames == 1) {
 			this.isSingleFrame = true;
 		}
-		var serv = new Server([6754112, 112354918, 'd6c6434d4d4a52f3dcb8c24faeff9ac0', 'http://tolmasoft.com/xuligame_demo'], null, this.stage);
+		var serv = new Server([6754112, 112354918, 'd6c6434d4d4a52f3dcb8c24faeff9ac0', 'https://tolmasoft.com/xuligame_demo'], null, this.stage);
 		
 		serv.php("getLinks", {});
 	}
