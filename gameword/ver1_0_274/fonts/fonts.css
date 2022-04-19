@@ -1,0 +1,15 @@
+@font-face {
+    font-family: Cartonsix NC; /* Имя шрифта */
+    src: url(carton.ttf); /* Путь к файлу со шрифтом */
+}
+
+@font-face {
+    font-family: BIP; /* Имя шрифта */
+    src: url(bip.ttf); /* Путь к файлу со шрифтом */
+}
+
+@font-face {
+    font-family: Bebas Neue; /* Имя шрифта */
+    font-weight: bold;
+    src: url(beue.ttf); /* Путь к файлу со шрифтом */
+}
