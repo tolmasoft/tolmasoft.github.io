@@ -1,0 +1,17 @@
+{
+    "bundles": [
+        {
+            "name": "interface",
+            "assets": [
+                {
+                    "alias": "base",
+                    "src": "./images/alias/interface.json"
+                },
+                {
+                    "alias": "spineboy",
+                    "src": "./images/animations/spineboy.json"
+                }
+            ]
+        }
+    ]
+}

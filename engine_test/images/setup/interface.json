@@ -1,0 +1,517 @@
+{
+    "display_objects":{
+        "up":{
+            "type": "Container",
+            "texture": ["up_bricks", "up_expline_downer", "up_exp_gradient", "up_bg", "up_quests", "up_changename", "up_separators", "up_level", "up_energy", "up_moneys", "up_moneysblow", "up_moneys_plusbtn", "up_coins", "up_settingsbut"]
+        },
+        "up_bg":{
+            "type" : "Sprite",
+            "texture": "iface_up_bg"
+        },
+        "up_expline_downer": {
+            "type": "Sprite",
+            "position": {
+                "x": 189, 
+                "y": 11
+            },
+            "texture": "iface_up_expline_downer"
+        },
+        "up_exp_gradient": {
+            "type": "Sprite",
+            "position": {
+                "x": 109,
+                "y": 9,
+                "x_max": 195
+            },
+            "texture": "iface_up_expline_upper"
+        },
+
+
+
+
+
+        "up_changename":{
+            "type": "Container",
+            "texture": ["up_changename_tfd", "up_changename_edit_button"]
+        },
+        "up_changename_edit_button":{
+            "type": "Button",
+            "position": {
+                "x": 114,
+                "y": 6
+            },
+            "texture": ["up_changename_edit_button_def", "up_changename_edit_button_act"]
+        },
+        "up_changename_edit_button_def":{
+            "type": "Sprite",
+            "texture": "iface_up_changename"
+        },
+        "up_changename_edit_button_act": {
+            "type": "Sprite",
+            "texture": "iface_up_changename_a"
+        },
+        "up_changename_tfd":{
+            "type": "Text", 
+            "position":{
+                "x": 61,
+                "y": 9
+            },
+            "default": "Сиплый",
+            "style": {"letterSpacing": 0.04, "dropShadow":true,"dropShadowAlpha":0.6,"dropShadowAngle":1.5708,"dropShadowBlur":2,"dropShadowDistance":2,"fill":"#f0e8c9","fontFamily":"\"Trebuchet MS\", Helvetica, sans-serif","fontSize":14},
+            "align": 0.5,
+            "masker": [["rect", 3, 0, 111, 25]]
+        },
+
+
+
+
+        "up_separators":{
+            "type": "Container",
+            "position":{
+                "y": 2,
+                "alpha": 0.85
+            },
+            "texture": ["up_separator1", "up_separator2", "up_separator3", "up_separator4"]
+        },
+        "up_separator1":{
+            "type": "Sprite",
+            "texture": "iface_up_diffline",
+            "position": {
+                "x": 141
+            }
+        },
+        "up_separator2": {
+            "type": "Sprite",
+            "texture": "iface_up_diffline",
+            "position": {
+                "x": 287
+            }
+        },
+        "up_separator3": {
+            "type": "Sprite",
+            "texture": "iface_up_diffline",
+            "position": {
+                "x": 580
+            }
+        },
+        "up_separator4": {
+            "type": "Sprite",
+            "texture": "iface_up_diffline",
+            "position": {
+                "x": 700
+            }
+        },
+
+
+
+
+        "up_level":{
+            "type": "Container",
+            "position": {
+                "x": 140,
+                "y": 5
+            },
+            "texture": ["up_level_icon", "up_level_blow", "up_level_button", "up_level_tfd"]
+        },
+        "up_level_icon":{
+            "type": "Sprite",
+            "position": {
+                "x": 30
+            },
+            "texture": "iface_up_expicon"
+        },
+        "up_level_blow":{
+            "type": "Container",
+            "position": {
+                "x": -7,
+                "y": 23,
+                "alpha": 0
+            },
+            "texture": ["up_level_blow_bg", "up_level_blow_current", "up_level_blow_next"] 
+        },
+        "up_level_blow_bg": {
+            "type": "Sprite",
+            "texture": "iface_up_expblow"
+        },
+        "up_level_blow_current":{
+            "type": "Text", 
+            "position":{
+                "x": 78,
+                "y": 29
+            },
+            "default": "0",
+            "style": {"fill":"#1e2720","fontFamily":"\"Trebuchet MS\", Helvetica, sans-serif","fontSize":14,"fontWeight":"bold"},
+            "align": 0.5
+        },
+        "up_level_blow_next":{
+            "type": "Text", 
+            "position":{
+                "x": 78,
+                "y": 66
+            },
+            "default": "50",
+            "style": {"fill":"#1e2720","fontFamily":"\"Trebuchet MS\", Helvetica, sans-serif","fontSize":14,"fontWeight":"bold"},
+            "align": 0.5
+        },
+        "up_level_button":{
+            "type": "Button",
+            "position":{
+                "alpha": 0
+            },
+            "texture": ["up_level_button_grp"]
+        },
+        "up_level_button_grp":{
+            "type": "Graphics",
+            "texture": [["rect", 3, 0, 143, 25]]
+        },
+        "up_level_tfd":{
+            "type": "Text", 
+            "position":{
+                "x": 30,
+                "y": 5
+            },
+            "default": "1",
+            "style": {"dropShadow":true,"dropShadowAlpha":0.6,"dropShadowAngle":1.5708,"dropShadowBlur":2,"dropShadowDistance":2,"fill":"#e8b88c","fontFamily":"\"Trebuchet MS\", Helvetica, sans-serif","fontSize":12},
+            "align": 1
+        },
+
+
+        "up_moneys":{
+            "type": "DropDown",
+            "position": {
+                "x": 584,
+                "y": 5
+            },
+            "texture": ["up_moneys_main", "up_moneys_sub"]
+        },
+
+
+        "up_moneys_main":{
+            "type": "Container",
+            "texture": ["up_money_seq", "up_moneys_tfd", "up_moneys_btn"]
+        },
+        "up_moneys_sub":{
+            "type": "Container",
+            "position":{
+                "visible": false
+            },
+            "texture": ["up_moneys_sub_bg", "up_money_seq", "up_moneys_tfd", "up_moneys_btn"]
+        },
+        "up_moneys_sub_bg": {
+            "type": "Sprite",
+            "position":{
+                "x":-3,
+                "y": -8
+            },
+            "texture": "iface_up_money_dropdown"
+        },
+
+
+        "up_money_seq":{
+            "type": "Sequence",
+            "texture": ["up_icon_bucks", "up_icon_seeds", "up_icon_preserves"],
+            "names": ["bucks", "seeds", "preserves"]
+        },
+        "up_icon_bucks":{
+            "type": "Sprite",
+            "position": {
+                "y": 3
+            },
+            "texture": "iface_up_bucks_icon"
+        },
+        "up_icon_seeds": {
+            "type": "Sprite",
+            "position": {
+                "x": 3,
+                "y": -1
+            },
+            "texture": "iface_up_seeds_icon"
+        },
+        "up_icon_preserves": {
+            "type": "Sprite",
+            "position": {
+                "x": 7
+            },
+            "texture": "iface_up_preserves_icon"
+        },
+        "up_moneys_tfd":{
+            "type": "Text", 
+            "position":{
+                "x": 34,
+                "y": 4
+            },
+            "default": "16",
+            "style": {"dropShadow":true,"dropShadowAlpha":0.6,"dropShadowAngle":1.5708,"dropShadowBlur":2,"dropShadowDistance":2,"fill":"#f0e8c9","fontFamily":"\"Trebuchet MS\", Helvetica, sans-serif","fontSize":14}
+        },
+        "up_moneys_plusbtn": {
+            "type": "Button",
+            "position": {
+                "x": 673,
+                "y": 7
+            },
+            "texture": [
+                "up_plusmoney_def",
+                "up_plusmoney_act"
+            ]
+        },
+        "up_plusmoney_def":{
+            "type": "Sprite",
+            "texture": "iface_up_addmoney"
+        },
+        "up_plusmoney_act": {
+            "type": "Sprite",
+            "texture": "iface_up_addmoney_a"
+        },
+        "up_moneysblow":{
+            "type": "Container",
+            "position":{
+                "x": 494,
+                "y": 27,
+                "alpha": 0
+            },
+            "texture": ["up_money_blow_bg", "up_money_blow_name", "up_money_blow_current", "up_money_blow_description"]
+        },
+        "up_money_blow_bg": {
+            "type": "Sprite",
+            "texture": "iface_up_moneyblow"
+        },
+        "up_money_blow_name":{
+            "type": "Text", 
+            "position":{
+                "x": 90,
+                "y": 12
+            },
+            "default": "Баксы",
+            "style": {"fill":"#1e2720","fontFamily":"\"Trebuchet MS\", Helvetica, sans-serif","fontSize":14,"fontWeight":"bold"},
+            "align": 0.5
+        },
+        "up_money_blow_current":{
+            "type": "Text", 
+            "position":{
+                "x": 90,
+                "y": 30
+            },
+            "default": "16",
+            "style": {"fill":"#753030","fontFamily":"\"Trebuchet MS\", Helvetica, sans-serif","fontSize":14,"fontWeight":"bold"},
+            "align": 0.5
+        },
+        "up_money_blow_description":{
+            "type": "Text", 
+            "position":{
+                "x": 90,
+                "y": 49
+            },
+            "default": "Лавэ для нормальных пацанов. Лучше монет, надежное дерьмо",
+            "style": {"align":"center","breakWords":true,"fill":"#1e2720","fontFamily":"\"Trebuchet MS\", Helvetica, sans-serif","fontSize":14,"wordWrap":true,"wordWrapWidth":179},
+            "align": 0.5
+        },
+        "up_moneys_btn": {
+            "type": "Button",
+            "position": {
+                "alpha": 0
+            },
+            "texture": ["up_moneys_button_grp"]
+        },
+        "up_moneys_button_grp": {
+            "type": "Graphics",
+            "texture": [
+                ["rect",0,0,87,25]
+            ]
+        },
+
+
+
+
+        "up_coins": {
+            "type": "Container",
+            "position": {
+                "x": 708,
+                "y": 6
+            },
+            "texture": ["up_coins_icon", "up_coins_tfd"]
+        },
+        "up_coins_icon": {
+            "type": "Sprite",
+            "texture": "iface_up_coins_icon"
+        },
+        "up_coins_tfd":{
+            "type": "Text", 
+            "position":{
+                "x": 30,
+                "y": 3
+            },
+            "default": "300",
+            "style": {"dropShadow":true,"dropShadowAlpha":0.6,"dropShadowAngle":1.5708,"dropShadowBlur":2,"dropShadowDistance":2,"fill":"#f0e8c9","fontFamily":"\"Trebuchet MS\", Helvetica, sans-serif","fontSize":14}
+        },
+
+        
+        
+        "up_quests":{
+            "type": "Container",
+            "position": {
+                "x": 696,
+                "y": 48
+            },
+            "texture": ["up_quests_button", "up_quests_button_light"]
+        },
+        "up_quests_button":{
+            "type": "Button",
+            "texture": ["up_quests_button_def", "up_quests_button_act"]
+        },
+        "up_quests_button_def":{
+            "type": "Sprite",
+            "texture": "iface_up_questsbutton"
+        },
+        "up_quests_button_act": {
+            "type": "Sprite",
+            "texture": "iface_up_questsbutton_a"
+        },
+        "up_quests_button_light": {
+            "type": "Sprite",
+            "position":{
+                "x": -2,
+                "y": -1,
+                "alpha": 0
+            },
+            "texture": "iface_up_questsbutton_lighter"
+        },
+
+
+
+        "up_settingsbut":{
+            "type": "Button",
+            "position": {
+                "x": 773,
+                "y": 48
+            },
+            "texture": ["up_settingsbut_act", "up_settingsbut_def"]
+        },
+        "up_settingsbut_act":{
+            "type": "Sprite",
+            "texture": "iface_up_settings_icon"
+        },
+        "up_settingsbut_def": {
+            "type": "Sprite",
+            "texture": "iface_up_settings_icon_a"
+        },
+
+
+
+        "up_bricks":{
+            "type": "Container",
+            "position":{
+                "x": -5,
+                "y": -207
+            },
+            "texture": ["up_bricks_bg"]
+        },
+        "up_bricks_bg": {
+            "type": "Sprite",
+            "texture": "iface_up_bg_bricks"
+        },
+
+
+        "up_energy":{
+            "type": "Container",
+            "position":{
+                "x": 298,
+                "y": 3
+            },
+            "texture":["up_energy_icon", "up_energy_tfd", "up_energy_blow", "up_energy_button"]
+        },
+        "up_energy_icon":{
+            "type": "Sprite",
+            "texture": "iface_up_energyicon"
+        },
+        "up_energy_tfd":{
+            "type": "Text", 
+            "position":{
+                "x": 18,
+                "y": 6
+            },
+            "default": "50",
+            "style": {"dropShadow":true,"dropShadowAlpha":0.6,"dropShadowAngle":1.5708,"dropShadowBlur":2,"dropShadowDistance":2,"fill":"#ffcf3b","fontFamily":"\"Trebuchet MS\", Helvetica, sans-serif","fontSize":14}
+        },
+        "up_energy_blow":{
+            "type": "Container",
+            "position":{
+                "x": -95,
+                "y": 25,
+                "alpha": 0
+            },
+            "texture":["up_energy_blow_bg", "up_energy_blow_current", "up_energy_blow_max", "up_energy_blow_time"]
+        },
+        "up_energy_blow_bg": {
+            "type": "Sprite",
+            "texture": "iface_up_energyblow"
+        },
+        "up_energy_blow_current":{
+            "type": "Text", 
+            "position":{
+                "x": 78,
+                "y": 28
+            },
+            "default": "50 (+1 через 00:30)",
+            "style": {"fill":"#1e2720","fontFamily":"\"Trebuchet MS\", Helvetica, sans-serif","fontSize":14},
+            "align": 0.5
+        },
+        "up_energy_blow_max":{
+            "type": "Text", 
+            "position":{
+                "x": 107,
+                "y": 49
+            },
+            "default": "50",
+            "style": {"fill":"#4b0505","fontFamily":"\"Trebuchet MS\", Helvetica, sans-serif","fontSize":13}
+        },
+        "up_energy_blow_time":{
+            "type": "Text", 
+            "position":{
+                "x": 102,
+                "y": 62
+            },
+            "default": "200 сек",
+            "style": {"fill":"#4b0505","fontFamily":"\"Trebuchet MS\", Helvetica, sans-serif","fontSize":13}
+        },
+        "up_energy_button": {
+            "type": "Button",
+            "position": {
+                "alpha": 0
+            },
+            "texture": ["up_energy_button_grp"]
+        },
+        "up_energy_button_grp": {
+            "type": "Graphics",
+            "texture": [
+                ["rect",-9,0,60,25]
+            ]
+        },
+
+
+
+
+
+
+
+
+        
+        "test_anim":{
+            "type": "Animation",
+            "position": {
+                "x": 300,
+                "y": 650,
+                "scale": 0.5
+            },
+            "texture": "spineboy",
+            "default": "walk",
+            "mixes": [
+                ["walk", "jump", 0.2],
+                ["jump", "walk", 0.4]
+            ]
+        }
+    },
+    "setup":[
+        "up",
+        "test_anim"
+    ]
+}
