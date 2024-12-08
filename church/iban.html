@@ -23,36 +23,7 @@
 
   </head>
   <body>
-	  <script>
-		  function getParameterByName(name, url = window.location.href) {
-    name = name.replace(/[\[\]]/g, '\\$&');
-    var regex = new RegExp('[?&]' + name + '(=([^&#]*)|&|#|$)'),
-        results = regex.exec(url);
-    if (!results) return null;
-    if (!results[2]) return '';
-    return decodeURIComponent(results[2].replace(/\+/g, ' '));
-}
-
-var foo = getParameterByName('i');
-if(foo != null) {
-    document.getElementById("paymentpurpose").value = 'Замовлення #' + foo;
-}
-else {
-    document.getElementById("paymentpurpose").value = 'Замовлення {номер вашого замовлення}';
-}
-
-
-
-function copyTextInClipboard(e) {
-    
-    var copyText = e.target.parentNode.parentNode.getElementsByTagName('input')[0].value;
-    navigator.clipboard.writeText(copyText);
-  
-  }
-
-
-	  </script>
-
+	  
     <div class="container">
 	<div class="row">
 		<div class="col-md-12">
@@ -83,7 +54,8 @@ function copyTextInClipboard(e) {
 					<div class="input-group">
 						<input type="text" class="form-control" id="name" value="ФОП Величко Вікторія Віталіївна" readonly>
 						<span class="input-group-btn">
-							<button type="button" onClick="if (!window.__cfRLUnblockHandlers) return false; copyTextInClipboard(event)" class="btn btn-default btn-copy" data-cf-modified-73767e98edbfb4dae255ad9a-="">Копіювати</button>
+							<button type="button" onClick="if (!window.__cfRLUnblockHandlers) return false; (e)=>{var copyText = e.target.parentNode.parentNode.getElementsByTagName('input')[0].value;
+    navigator.clipboard.writeText(copyText)}" class="btn btn-default btn-copy" data-cf-modified-73767e98edbfb4dae255ad9a-="">Копіювати</button>
 						</span>
 					</div>
 				</div>
